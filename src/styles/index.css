@@ -1,11 +1,86 @@
-/* 
+.general-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center; 
+    min-height: 100vh;                 
+    padding: 20px;         
+    box-sizing: border-box; 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+}
 
-*/
+.traffic-light {
+    width: 120px;
+    height:300px;
+    background-color: #333;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+.palo {
+    width: 20px;
+    height: 100px;
+    background-color: #333;
+    margin: 0 auto;
+  }
+  
+.light {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 10px auto;
+    opacity: 0.3;
+  }
+  
+.red { background-color: #ff0000; }
+.yellow { background-color: #ffff00d2; }
+.green { background-color: #11d111; }
+  
+.brillo {
+    opacity: 1;
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+  }
+
+.rotate-button {
+    padding: 10px 20px;
+    color: black;
+    background: linear-gradient(
+    to right,
+    #ff0000 0%,     
+    #ff0000 33%, 
+    #ffff00 33%,     
+    #ffff00 66%,
+    #11d111 66%,    
+    #11d111 100%
+  );
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    margin-top: 30px;
+  }
+  
+.rotate-button:hover {
+    opacity: 0.9;
+  }
+
+.light.purple {
+    background-color: #9c27b0;
+}
+.purple-button {
+    padding: 10px 20px;
+    color: black;
+    background-color: #9c27b0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    margin-top: 30px;
+}
+
+.purple-button:hover {
+    opacity: 0.9;
+  }
